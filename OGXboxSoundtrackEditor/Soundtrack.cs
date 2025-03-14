@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -56,7 +57,7 @@ namespace OGXboxSoundtrackEditor
                     if (sGroup.songTimeMilliseconds[i] > 0)
                     {
                         string songName = new string(sGroup.songNames[i]).Trim();
-                        allSongs.Add(new Song { Name = songName, TimeMs = sGroup.songTimeMilliseconds[i], id = sGroup.songId[i], songGroupId = sGroup.id, soundtrackId = id } );
+                        allSongs.Add(new Song { Name = songName, TimeMs = sGroup.songTimeMilliseconds[i], id = sGroup.songId[i], songGroupId = sGroup.id, soundtrackId = id });
                     }
                 }
             }
